@@ -79,17 +79,17 @@ header.sticky{
 
 /*Home-Upper*/
 .about{
-
     align-items: center;
     gap: 1.5rem;
     padding-top: 120px;
-    padding: 150px 15%;
+    padding: 120px 15%;
+    margin-bottom: 0px;
 
 }
 .about-set{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-color: var(--second-text-color);
     align-content: center;
@@ -100,26 +100,21 @@ header.sticky{
 .about-img{
     align-items: center;
     justify-content: space-between;
-    margin-left: 100px;
-    width: 60%;
 }
 .about-img img{
-    max-width: 250px;
-    height: 250px; 
+
+    width: 220px;
+    height: 250px;
+    margin-left: 60px;
     border-radius: 50%;
     overflow: hidden;
     border-color: #0026ff;
     border-width: 10px;
-
-
 }
-
 .about-text{
     text-align: left;
-    width: 100%;
-    margin-right: 100px;
+    width: 80%;
     margin-top: 60px;
-    align-items: center;
     justify-content: space-between;
 
 }
@@ -136,33 +131,941 @@ header.sticky{
     font-size: 15px;
     font-weight: 600;
     color: var(--text-color);
-    margin: 15px 0 10px 0;
     line-height: 1.8;
-
-
+    width: 80%;
 }
 .about-text i{
     font-size: 10px;
 
 
 }
+/*Experience*/
+
+
+.work{
+    padding: 20px 15%;
+    color: var(--main-color);
+    margin-bottom: 70px;
+
+}
+hr {
+    height: 5px; /* Set the height of the horizontal bar */
+    border: 8px;
+    background-color: #000; /* Set the background color of the bar */
+    margin: 10px 0; /* Add margin above and below the horizontal bar */
+  }
+
+  .exp-text{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    color: var(--main-color);
+    align-content: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-top: 80px;
+
+}
+
+.exp-text img{
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    border-radius: 50%;
+    overflow: hidden; /* Clip the image to the circular shape */
+    border: 4px solid var(--second-text-color);
+
+
+}
+.exp-text p{
+    margin-left: 40px;
+    width: 70%;
+    align-content: center;
+    padding-top: 50px;
+
+}
+.exp-text span{
+    color: var(--text-color);
+    font-weight: 700;
+
+}
+
+
+/*Progess bars styling*/
+
+.skills{
+    align-content: center;
+    padding: 20px 15%;
+    margin-bottom: 120px;
+    color: var(--main-color);
+
+
+}
+.skills hr{
+
+    margin-bottom: 80px;
+
+
+}
+.main-text{
+    margin-bottom: 60px;
+
+}
+
+.main-skills-content{
+    align-items: center;
+    justify-content: center;
+
+    
+}
+  .skills-content{
+
+
+    margin-top:  15px;
+    margin-bottom:  15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-content h3{
+    margin-left:  39px;
+    float: left;
+    margin-right: 39px;
+    text-align: left;
+    justify-content: center;
+    width: 20%;
+    color: var(--text-color);
+  }
+  .skills-content progress{
+    align-content: center;
+    justify-content: center;
+    margin-right: 25px;
+    margin-left: 55px;
+    width: 50%;
+  }
+  .skills-content h4{
+    margin-right: 25px;
+    float: right;
+    margin-right: 39px;
+    color: var(--text-color);
+
+  }
+
+/*Portfolio Section styling*/
+/*Services Section styling*/
+.services{
+    align-content: center;
+    padding: 20px 15%;
+    margin-bottom: 120px;
+    color: var(--main-color);
+}
+.main-text{
+    text-align: center;
+}
+.main-text p{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+
+}
+.box{
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.s-icons {
+    font-size: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.s-icons img {
+
+    height: 250px;
+    width: 250px;
+}
+.box h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--bg-second-color);
+    font-weight: 800;
+}
+.box p{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+.box a{
+    color: var(--bg-second-color);
+    font-size: 10px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.read{
+    display: inline-block;
+    padding: 8px 18px;
+    background: #333333;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    transition: all .4s ease;
+
+}
+.read:hover{
+    background-color: #fff;
+    color: var(--second-bg-color);
+}
+.box:hover{
+    transform: translateY(-8px);
+}
+/*Extra Curricular*/
+
+
+.Extra-Curricular{
+    padding: 20px 15%;
+    color: var(--main-color);
+    margin-bottom: 120px;
+
+}
+hr {
+    height: 5px; /* Set the height of the horizontal bar */
+    border: 8px;
+    background-color: #000; /* Set the background color of the bar */
+    margin: 10px 0; /* Add margin above and below the horizontal bar */
+  }
+
+  .exp-text{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    color: var(--main-color);
+    align-content: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-top: 80px;
+
+}
+
+.exp-text img{
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    border-radius: 50%;
+    overflow: hidden; /* Clip the image to the circular shape */
+    border: 4px solid var(--second-text-color);
+
+
+}
+.exp-text p{
+    margin-left: 40px;
+    width: 70%;
+    align-content: center;
+    padding-top: 50px;
+
+}
+.exp-text span{
+    color: var(--text-color);
+    font-weight: 700;
+
+}
+/*Academic Qualification Section styling*/
+.achievement-box {
+    max-width: 400px; /* Set a maximum width for the boxes */
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--second-color);
+    color: rgb(14, 13, 13);
+    border-radius: 13px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+          
+  }
+  
+  .achievement-box li{
+    display: inline-block;
+  }
+  
+  /* Button styling for Academic and Curriculum buttons (optional) */
+
+.acad{
+    background-color: var(--bg-color);
+}
+.achievement-box{
+
+}
+  .achievement-box button {
+    margin-bottom: 5px;
+    font-size:20px;
+    width: 1000px;
+    height: 50px;
+    background-color: var(--second-bg-color);
+    border-radius: 20px;
+    padding:15px;
+    color: var(--text-color);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .achievement-content{
+    font-size:20px;
+    font-weight:800;
+  }
+  .achievement-box ul{
+    line-height:1.6;
+  }
+  .achievement-box p{
+    font-weight: 300;
+  }
+
+
+
+
+
+/*Contact Section styling*/
+.contact{
+
+    padding: 20px 15%;
+    color: var(--main-color);
+    margin-bottom: 120px;
+    margin-top: 60px;
+}
+.contact-text h4{
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.contact-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+
+}
+.list{
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+.list a{
+    color: var(--text-color);
+}
+.list li{
+    color: var(--text-color);
+
+    margin-top: 11px;
+}
+.list li a{
+    display: block;
+    color: var(--second-color);
+    font-size: 15px;
+    transition: all 0.45s ease;
+}
+.list li a:hover{
+    color: var(--text-color);
+    transform: translateX(6px);
+}
+.contact-icons i{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+
+    display: inline-flex;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover{
+    background: var(--text-color);
+    color: var(--main-color);
+}
 
 
 
 
 
 
+@media (max-width: 1480px){
+        header,
+        header .sticky {
+            padding: 10px 2.5%;
+        }
+    
+        section {
+            padding: 90px 3% 40px; /* Adjusted padding for smaller screens */
+        }
+    
+        .end {
+            padding: 10px 3%; /* Adjusted padding for smaller screens */
+        }
+    }
+ 
+ @media(max-width: 1100px){
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        padding: 15px 5%;
+        border-bottom: 1px solid transparent;
+        border-color: var(--main-color);
+        transition: all 0.45s ease;
+        background-color: var(--text-color);
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .navlist a {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    
+    .menu-icon {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    
+    header.sticky {
+        padding: 10px 5%;
+    }
+    
+    /* Home-Upper */
+    .about {
+        padding-top: 80px;
+        padding: 80px 5%;
+    }
+    
+    .about-img img {
+        width: 180px;
+        height: 180px;
+        margin-left: 40px;
+    }
+    
+    .about-text {
+        margin-top: 40px;
+    }
+    
+    .about-text h4 {
+        font-size: 24px;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+    }
+    
+    /* Experience */
+    .work {
+        padding: 20px 5%;
+        margin-bottom: 50px;
+    }
+    
+    .exp-text img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .exp-text p {
+        margin-left: 20px;
+    }
+    
+    /* Skills */
+    .skills {
+        padding: 20px 5%;
+        margin-bottom: 100px;
+    }
+    
+    .skills-content h3 {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    
+    .skills-content progress {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    
+    .skills-content h4 {
+        font-size: 14px;
+    }
+    
+    /* Portfolio */
+    .services {
+        padding: 20px 5%;
+        margin-bottom: 100px;
+    }
+    
+    .box h3 {
+        font-size: 18px;
+    }
+    
+    .box p {
+        font-size: 14px;
+    }
+    
+    /* Extra Curricular */
+    .Extra-Curricular {
+        padding: 20px 5%;
+        margin-bottom: 100px;
+    }
+    
+    .exp-text img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .exp-text p {
+        margin-left: 20px;
+    }
+    
+    /* Contact */
+    .contact {
+        padding: 20px 5%;
+        margin-bottom: 100px;
+    }
+    
+    .contact-text h4 {
+        font-size: 18px;
+    }
+    
+    .contact-text h2 {
+        font-size: 24px;
+    }
+    
+    .contact-text p {
+        font-size: 14px;
+    }
+    
+    .list a {
+        font-size: 14px;
+    }
+    
+    .contact-icons i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+ @media(max-width: 920x){
+    header {
+        padding: 15px 10%;
+    }
+    
+    .menu-icon {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    
+    /* Home-Upper */
+    .about {
+        padding: 80px 10%;
+    }
+    
+    .about-set {
+        height: 300px;
+    }
+    
+    .about-img img {
+        width: 180px;
+        height: 200px;
+        margin-left: 40px;
+        border-width: 8px;
+    }
+    
+    .about-text {
+        margin-top: 40px;
+    }
+    
+    .about-text h4 {
+        font-size: 24px;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+    }
+    
+    /* Experience */
+    .work {
+        padding: 20px 10%;
+        margin-bottom: 50px;
+    }
+    
+    .exp-text img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .exp-text p {
+        margin-left: 20px;
+    }
+    
+    /* Skills */
+    .skills {
+        padding: 20px 10%;
+        margin-bottom: 100px;
+    }
+    
+    .skills-content h3 {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    
+    .skills-content progress {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    
+    .skills-content h4 {
+        font-size: 14px;
+    }
+    
+    /* Portfolio and Services */
+    .services {
+        padding: 20px 10%;
+        margin-bottom: 100px;
+    }
+    
+    .box h3 {
+        font-size: 18px;
+    }
+    
+    .box p {
+        font-size: 14px;
+    }
+    .s-icons{
+        height: 50px;
+        width: 50px;
 
+    }
+    .s-icons img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    /* Extra Curricular */
+    .Extra-Curricular {
+        padding: 20px 10%;
+        margin-bottom: 100px;
+    }
+    
+    .exp-text img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .exp-text p {
+        margin-left: 20px;
+    }
+    
+    /* Contact */
+    .contact {
+        padding: 20px 10%;
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
+    
+    .contact-text h4 {
+        font-size: 18px;
+    }
+    
+    .contact-text h2 {
+        font-size: 22px;
+    }
+    
+    .contact-text p {
+        font-size: 14px;
+    }
+    
+    .list a {
+        font-size: 14px;
+    }
+    
+    .contact-icons i {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    @media (max-width: 920px) {
+        header {
+            padding: 15px 5%;
+        }
+    
+        .menu-icon {
+            font-size: 28px;
+        }
+    
+        .about {
+            padding: 60px 5%;
+        }
+    
+        .about-img img {
+            width: 160px;
+            height: 180px;
+            margin-left: 20px;
+            border-width: 6px;
+        }
+    
+        .about-text h4 {
+            font-size: 22px;
+        }
+    
+        .skills,
+        .work,
+        .services,
+        .Extra-Curricular,
+        .contact {
+            padding: 20px 5%;
+            margin-bottom: 80px;
+        }
+    
+        .skills-content h3 {
+            margin-left: 15px;
+            font-size: 14px;
+        }
+    
+        .skills-content progress {
+            margin-left: 30px;
+            margin-right: 15px;
+        }
+    
+        .services-content {
+            margin-top: 4rem;
+        }
+    
+        .box h3 {
+            font-size: 16px;
+        }
+    
+        .box p {
+            font-size: 12px;
+        }
+    
+        .contact-text h4 {
+            font-size: 16px;
+        }
+    
+        .contact-text h2 {
+            font-size: 20px;
+        }
+    
+        .contact-text p {
+            font-size: 12px;
+        }
+    
+        .contact-icons i {
+            font-size: 16px;
+            width: 35px;
+            height: 35px;
+            margin-right: 8px;
+        }
+    }
+    
+ }
+    
+@media(max-width: 840x){
+  .menu-icon{
+    display: block;
+  }
+  .menu-icon i{
+    display: block;
+    font-size: 30px;
+  }
+  .navlist{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    transition: all .45s ease;
+  }
+  .navlist a{
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all .45s ease;
+    color: var(--text-color);
 
+  }
+  .navlist a:hover{
+color: var(--text-color);
+    
+  }
+  .navlist a.active{
+    color: var(--text-color);
+  }
+}
 
-
-
-
-
-
-
-
-
+    @media (max-width: 768px) {
+        /* Header */
+        header {
+            padding: 15px 5%;
+        }
+    
+        .menu-icon {
+            font-size: 28px;
+            margin-left: 15px;
+        }
+    
+        /* About */
+        .about {
+            padding: 60px 5%;
+        }
+    
+        .about-img img {
+            width: 160px;
+            height: 180px;
+            margin-left: 20px;
+            border-width: 6px;
+        }
+    
+        .about-text h4 {
+            font-size: 22px;
+        }
+    
+        /* Experience */
+        .exp-text img {
+            width: 160px;
+            height: 160px;
+            border-width: 4px;
+        }
+    
+        .exp-text p {
+            margin-left: 20px;
+        }
+    
+        /* Skills */
+        .skills hr {
+            margin-bottom: 60px;
+        }
+    
+        .skills-content h3 {
+            margin-left: 15px;
+            font-size: 14px;
+        }
+    
+        .skills-content progress {
+            margin-left: 30px;
+            margin-right: 15px;
+        }
+    
+        /* Services */
+        .main-text p {
+            font-size: 14px;
+        }
+    
+        .services-content {
+            margin-top: 3rem;
+        }
+    
+        .box {
+            padding: 25px 35px;
+        }
+    
+        .box h3 {
+            font-size: 18px;
+        }
+    
+        .box p {
+            font-size: 14px;
+        }
+    
+        /* Extra Curricular */
+        .exp-text img {
+            width: 160px;
+            height: 160px;
+            border-width: 4px;
+        }
+    
+        .exp-text p {
+            margin-left: 20px;
+        }
+    
+        /* Academic Qualification */
+        .achievement-box {
+            max-width: 300px;
+        }
+    
+        .achievement-box button {
+            font-size: 18px;
+            width: auto;
+            height: auto;
+            padding: 10px 20px;
+        }
+    
+        .achievement-content {
+            font-size: 18px;
+        }
+    
+        /* Contact */
+        .contact {
+            padding: 20px 5%;
+            margin-bottom: 80px;
+            margin-top: 30px;
+        }
+    
+        .contact-text h4 {
+            font-size: 18px;
+        }
+    
+        .contact-text h2 {
+            font-size: 24px;
+        }
+    
+        .contact-text p {
+            font-size: 14px;
+        }
+    
+        .list li {
+            margin-top: 8px;
+        }
+    
+        .contact-icons i {
+            font-size: 18px;
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+    }
+    
 
 
 
@@ -205,10 +1108,425 @@ header.sticky{
     padding: 8px;
     border-radius: 8px;
     font-size: 25px;
-    color: var(--text-color);
+    color: var(--bg-second-color);
     background: var(--main-color);
 
  }
+}
 
+@media (max-width: 1245px) {
+    /* Header */
+    header {
+        padding: 20px 5%;
+    }
 
+    .menu-icon {
+        font-size: 28px;
+        margin-left: 15px;
+    }
 
+    /* About */
+    .about {
+        padding: 60px 5%;
+    }
+
+    .about-img img {
+        width: 160px;
+        height: 180px;
+        margin-left: 20px;
+        border-width: 6px;
+    }
+
+    .about-text h4 {
+        font-size: 22px;
+    }
+
+    /* Experience */
+    .exp-text img {
+        width: 160px;
+        height: 160px;
+        border-width: 4px;
+    }
+
+    .exp-text p {
+        margin-left: 20px;
+    }
+
+    /* Skills */
+    .skills hr {
+        margin-bottom: 60px;
+    }
+
+    .skills-content h3 {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .skills-content progress {
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    /* Services */
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .services-content {
+        margin-top: 3rem;
+    }
+
+    .box {
+        padding: 25px 35px;
+    }
+
+    .box h3 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    /* Extra Curricular */
+    .exp-text img {
+        width: 160px;
+        height: 160px;
+        border-width: 4px;
+    }
+
+    .exp-text p {
+        margin-left: 20px;
+    }
+
+    /* Academic Qualification */
+    .achievement-box {
+        max-width: 300px;
+    }
+
+    .achievement-box button {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .achievement-content {
+        font-size: 18px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 20px 5%;
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-text h2 {
+        font-size: 24px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .list li {
+        margin-top: 8px;
+    }
+
+    .contact-icons i {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 375px) {
+    /* Header */
+    header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navlist a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .menu-icon {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 5%;
+    }
+
+    .about-img img {
+        width: 140px;
+        height: 160px;
+        margin-left: 10px;
+        border-width: 4px;
+    }
+
+    .about-text h4 {
+        font-size: 24px;
+    }
+
+    /* Experience */
+    .exp-text img {
+        width: 160px;
+        height: 160px;
+        border-width: 3px;
+    }
+
+    .exp-text p {
+        margin-left: 15px;
+    }
+
+    /* Skills */
+    .skills hr {
+        margin-bottom: 60px;
+    }
+
+    .skills-content h3 {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .skills-content progress {
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    /* Services */
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .services-content {
+        margin-top: 3rem;
+    }
+
+    .box {
+        padding: 25px 35px;
+    }
+
+    .box h3 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    /* Extra Curricular */
+    .exp-text img {
+        width: 160px;
+        height: 160px;
+        border-width: 3px;
+    }
+
+    .exp-text p {
+        margin-left: 15px;
+    }
+
+    /* Academic Qualification */
+    .achievement-box {
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .achievement-box button {
+        font-size: 16px;
+        width: auto;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .achievement-content {
+        font-size: 16px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 20px 5%;
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-text h2 {
+        font-size: 20px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .list li {
+        margin-top: 8px;
+    }
+
+    .contact-icons i {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Header */
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navlist a {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 5%;
+    }
+
+    .about-img img {
+        width: 180px;
+        height: 200px;
+        margin-left: 40px;
+        border-width: 6px;
+    }
+
+    .about-text h4 {
+        font-size: 26px;
+    }
+
+    /* Experience */
+    .exp-text img {
+        width: 180px;
+        height: 180px;
+        border-width: 3px;
+    }
+
+    .exp-text p {
+        margin-left: 20px;
+    }
+
+    /* Skills */
+    .skills hr {
+        margin-bottom: 60px;
+    }
+
+    .skills-content h3 {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .skills-content progress {
+        margin-left: 25px;
+        margin-right: 5px;
+        width: 45%;
+    }
+
+    /* Services */
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .services-content {
+        margin-top: 3rem;
+    }
+
+    .box {
+        padding: 30px 40px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    /* Extra Curricular */
+    .exp-text img {
+        width: 180px;
+        height: 180px;
+        border-width: 3px;
+    }
+
+    .exp-text p {
+        margin-left: 20px;
+    }
+
+    /* Academic Qualification */
+    .achievement-box {
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .achievement-box button {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .achievement-content {
+        font-size: 18px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 15px 5%;
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-text h2 {
+        font-size: 18px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .list li {
+        margin-top: 8px;
+    }
+
+    .contact-icons i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+}
